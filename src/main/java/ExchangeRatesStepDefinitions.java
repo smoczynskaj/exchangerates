@@ -7,13 +7,10 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
 
-import java.awt.*;
-
 public class ExchangeRatesStepDefinitions {
     private static final String BASE_URL = "https://api.ratesapi.io/api/";
     RequestSpecification request;
     private  static Response response;
-    private  static  String  jsonString;
 
     @Given("Rates API for Latest Foreign Exchange rates")
     public void ratesAPIForLatestForeignExchangeRates() {
